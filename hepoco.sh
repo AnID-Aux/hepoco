@@ -135,7 +135,7 @@ remove_ssh_rule
 }
 
 # Nachricht über dem Menü
-echo "V00D00`s Hetzner Cloud SSH-Port-22 opener/closer, please choice:"
+echo "V00D00s Hetzner Cloud SSH-Port-22 opener/closer, please choice:"
 echo "1=open Port 22"
 echo "2=close Port 22"
 
