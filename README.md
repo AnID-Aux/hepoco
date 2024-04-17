@@ -27,12 +27,28 @@ Der API Token ist pro Cloud-Projekt einmalig.
 
 Ebenso muss das Script ausführbar gemacht werden: chmod+x
 
+Verknüpfung als Anwendung: 
+Die Datei hepoco.desktop in das Verzeichnis "local/share/applications/" kopieren und bearbeiten.
+
+
 #######
 
 # hepoco.sh
 Hetzner Port Control
 
 A tool that speaks to the Hetzner Cloud API.
+
+###
+The tool has the following dependencies:
+
+For Ubuntu/Debian:
+sudo apt install jq
+
+For Macs:
+/bin/bash -c "$(curl -fsSL raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install jq
+###
 
 When the port is opened, the script fetches the public IPs (v4+v6) of the client from which it is executed. It uses the API from ipify.org
 If v6 is not available, it will only choose v4.
@@ -45,3 +61,6 @@ The API key can be generated in the Hetzner Cloud Console under “Security”, 
 The API token is unique per cloud project.
 
 The script must also be made executable: chmod+x
+
+Link as an application:
+Copy the file hepoco.desktop to the "local/share/applications/" directory and edit it.
