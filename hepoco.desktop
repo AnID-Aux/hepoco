@@ -3,4 +3,4 @@ Type=Application
 Terminal=true
 Name=Hepoco
 Icon=/home/youruser/Dokumente/Hepoco/logo.svg
-Exec=./hepoco.sh
+Exec=/home/youruser/Dokumente/Hepoco/hepoco.sh
