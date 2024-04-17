@@ -3,6 +3,18 @@ Hetzner Port Control
 
 Ein Tool dass mit der Hetzner Cloud API spricht.
 
+###
+Das Tool hat folgende abhängigkeiten:
+
+Für Ubuntu/Debian:
+sudo apt install jq
+
+Für Macs:
+/bin/bash -c "$(curl -fsSL raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install jq
+###
+
 Das Script holt beim öffnen des Ports die öffentlichen IPs (v4+v6) des Clients, von dem es ausgeführt wird. Es nutzt dabei die API von ipify.org
 Sollte keine v6 verfügbar sein wählt es nur die v4.
 
