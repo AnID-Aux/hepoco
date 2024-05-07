@@ -16,9 +16,9 @@ brew install jq
 ###
 
 Das Script holt beim öffnen des Ports die öffentlichen IPs (v4+v6) des Clients, von dem es ausgeführt wird. Es nutzt dabei die API von ipify.org
-Sollte keine v6 verfügbar sein wählt es nur die v4.
+Sollte keine v6 verfügbar sein wählt es nur die v4 aus.
 
-Danach wird der Port 22 (ssh) über die Hetzner Cloud API geöffnet. Hierbei wird als Quelle die oben erwähnten IPs eingetragen.
+Danach wird der Port 22 (ssh) über die Hetzner Cloud API geöffnet. Hierbei werden als Quelle die oben erwähnten IPs eingetragen.
 
 Es muss der Cloud API-Key in der Section "open Port" UND "close Port" eingegeben werden. 
 
@@ -28,7 +28,7 @@ Der API Token ist pro Cloud-Projekt einmalig.
 Ebenso muss das Script ausführbar gemacht werden: chmod+x
 
 Verknüpfung als Anwendung: 
-Die Datei hepoco.desktop in das Verzeichnis "local/share/applications/" kopieren und bearbeiten.
+Die Datei hepoco.desktop in das Verzeichnis ".local/share/applications/" kopieren und bearbeiten/anpassen.
 
 
 #######
@@ -63,4 +63,4 @@ The API token is unique per cloud project.
 The script must also be made executable: chmod+x
 
 Link as an application:
-Copy the file hepoco.desktop to the "local/share/applications/" directory and edit it.
+Copy the file hepoco.desktop to the ".local/share/applications/" directory and edit it.
