@@ -140,7 +140,9 @@ echo "1=open Port 22"
 echo "2=close Port 22"
 
 # Benutzereingabe lesen
-read -p "Your Choice: " choice
+#read -p "Your Choice: " choice
+echo -n "Your Choice: "
+read choice
 
 # Fallunterscheidung basierend auf der Benutzerauswahl
 case $choice in
